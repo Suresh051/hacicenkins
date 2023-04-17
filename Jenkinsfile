@@ -10,7 +10,7 @@ pipeline {
     stage('Building image') {
       steps{
      
-      sh "echo AWSKEY && sleep 10"
+       sh 'node --version'
 
 
           }
