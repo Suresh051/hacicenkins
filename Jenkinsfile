@@ -11,12 +11,12 @@ pipeline {
     }
     stage('Building image') {
       steps{
-        script {
-      app.inside {
+  
+
        sh 'node --version'
 
-      }
-        }
+     
+        
           }
       }
    
