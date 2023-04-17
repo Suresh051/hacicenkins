@@ -4,15 +4,15 @@ pipeline {
   stages {
  stage('Build') {
       steps {
-        sh 'docker build -t lloydmatereke/jenkins-docker-hub .'
+        app = docker.build("momo979/purple-beard-team-2")
       }
     }
     stage('Building image') {
       steps{
-     
+      app.inside {
        sh 'node --version'
 
-
+      }
           }
       }
    
