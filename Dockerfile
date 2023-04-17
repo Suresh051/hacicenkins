@@ -1,2 +1,6 @@
-FROM ubuntu:20.04
-RUN apt update && apt upgrade -y
+# from base image node
+FROM node:8.11-slim
+
+# command executable and version
+CMD ["-v"]
+ENTRYPOINT ["node"]
